@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "swaroop-cadb9"
+  },
+  "targets": {
+    "swaroop-cadb9": {
+      "hosting": {
+        "tictactoe": [
+          "swaroop-cadb9"
+        ]
+      }
+    }
+  }
+}
