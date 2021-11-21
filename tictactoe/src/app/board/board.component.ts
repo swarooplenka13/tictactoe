@@ -19,12 +19,12 @@ export class BoardComponent implements OnInit {
     this.winner=null;
     this.xIsnext=true;
   }
-  get player(){
+  get playe(){
     return this.xIsnext ? 'X':'O';
   }
   makeMove(id: number){
     if(!this.squares[id]){
-      this.squares.splice(id,1,this.player);
+      this.squares.splice(id,1,this.playe);
       this.xIsnext=!this.xIsnext;
     }
   this.winner = this.calcwinner();
@@ -44,7 +44,7 @@ export class BoardComponent implements OnInit {
       const [a,b,c]=lines[i];
       if(this.squares[a]&&this.squares[a]===this.squares[b] && this.squares[a]==this.squares[c])
       {
-        return this.squares[a];
+        return this.squares[b];
       }
     }
     return null;
